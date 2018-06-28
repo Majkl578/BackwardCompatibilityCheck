@@ -12,12 +12,10 @@ before_script:
 git:
   depth: 99999
 
-if: tag IS blank
-
 deploy:
   provider: releases
   api_key:
-    secure: CHANGEME
+    secure: "lK49QbYeVNiXSdZbnO2q3vtCIRYaB7E4SAeVOjOAS28vMo57sw678Hyg70BSmhHyr079B3RyExduV7WKAi0IY2d+YfGja3lptr+ana1rNEmBvjT/I7x1BIzukvuGa8PWpFN+gNvQhgA3bKVDtWsQhhDPdiC6JwJSlGDW8wfI+VxTQ6x109WM0QbzQzHE2D7QRQoRQ89V56U4vL3lJ17fu0LUXsHwD+fExvL5COEUzrT5J4oGGS8gIxSZtst29ecrpHXuXm3M8YrmWQGcLVUFi1Hgf2VH4DwJdm6xx3CG4c8iuSYBVLvCZeYSr6GbAGlFD5ailolLvklgkkWvLD9RNeLBXMupaUHdhOmjFaeMQ0SL+hqCJ8rJljouN7KMTvgmpsiearLmmWNV7pHrrbEtYGvEB+fDByW8ETX4w9sK2MJhBPMRPVCMq6afVjiNk+g9nOjHQ3bECyXsE0CgKhULrg9lB0MTcwI/lbTxMMOk2qYWdVulPUODk5spVEU98ZZSIWxYu5SZP5YW/s62xy1PJuKU17X60K89t6DX5ctwe5sbedTwH/8l0JP2tx52Hfdye2o/1Dw7pB8y6wgO3FT7XQ/v8+44qaM8kwuYLixo8Z9/yilCL1D6XnfXOQl8ZSrUmj7tNSAuCOGa1/uxt2bC3jheTGhD2Ch7557Cy1+P6l4="
   file: dist/roave-backward-compatibility-check.phar
   skip_cleanup: true
   on:
